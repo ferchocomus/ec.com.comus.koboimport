@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: COMUS KoboToolbox Import
+Bundle-SymbolicName: ec.com.comus.koboimport;singleton:=true
+Bundle-Version: 8.2.0.qualifier
+Automatic-Module-Name: ec.com.comus.koboimport
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.adempiere.base;bundle-version="8.2.0",
+ org.adempiere.plugin.utils;bundle-version="8.2.0",
+ com.google.gson
+Bundle-Activator: org.adempiere.plugin.utils.AdempiereActivator
+Service-Component: OSGI-INF/*
+Bundle-Vendor: www.comus.com.ec
