@@ -5,8 +5,7 @@ import java.util.Map;
 import java.util.logging.Level;
 
 import org.adempiere.exceptions.AdempiereException;
-import org.compiere.model.MBPartner;
-import org.compiere.model.MUser;
+import org.compiere.model.Query;
 import org.compiere.process.ProcessInfoParameter;
 import org.compiere.process.SvrProcess;
 import org.compiere.util.DB;
@@ -16,25 +15,25 @@ import org.compiere.util.Util;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 
+import com.comus.model.I_C_BPartner_Extradata;
+import com.comus.model.X_C_BPartner_Extradata;
 import com.comus.util.KoboClient;
 
 /**
- * Importa submissions de un formulario KoboToolbox y crea
- * Terceros (C_BPartner) con su contacto (AD_User).
- * Dedup por Value = "KOBO-" + _id del submission.
+ * Importa submissions de un formulario KoboToolbox hacia C_BPartner_Extradata.
+ * Busca el Tercero existente por TaxID y lo asigna al registro.
+ * Dedup/actualización por KoboSubmissionID = _id del submission de Kobo.
  */
 public class ImportKoboSubmissions extends SvrProcess {
 
 	/** Data Column Names del formulario Kobo del demo COMUS (hardcodeados) */
-	private static final String FIELD_NAME  = "Nombre";
-	private static final String FIELD_TAXID = "TaxID";
-	private static final String FIELD_PHONE = "teléfono";
-	private static final String FIELD_EMAIL = "email";
+	private static final String FIELD_TAXID   = "TaxID";
+	private static final String FIELD_NATURAL = "Persona Natural";
+	private static final String FIELD_GENDER  = "Genero";
 
 	private String p_KoboBaseURL;
 	private String p_KoboApiToken;
 	private String p_KoboAssetUID;
-	private int p_BPGroupId;
 	private int p_OrgId;
 
 	@Override
@@ -53,10 +52,7 @@ public class ImportKoboSubmissions extends SvrProcess {
 			case "KoboAssetUID":
 				p_KoboAssetUID = para.getParameterAsString();
 				break;
-			case "BPGroupId":
-				p_BPGroupId = para.getParameterAsInt();
-				break;
-			case "OrgId":
+			case "AD_Org_ID":
 				p_OrgId = para.getParameterAsInt();
 				break;
 			default:
@@ -71,8 +67,6 @@ public class ImportKoboSubmissions extends SvrProcess {
 			throw new AdempiereException("Parámetro requerido faltante: KoboApiToken");
 		if (Util.isEmpty(p_KoboAssetUID, true))
 			throw new AdempiereException("Parámetro requerido faltante: KoboAssetUID");
-		if (p_BPGroupId <= 0)
-			throw new AdempiereException("Parámetro requerido faltante: BPGroupId");
 		if (p_OrgId < 0)
 			throw new AdempiereException("Parámetro requerido faltante: OrgId");
 	}
@@ -80,7 +74,8 @@ public class ImportKoboSubmissions extends SvrProcess {
 	@Override
 	protected String doIt() throws Exception {
 		int created = 0;
-		int skipped = 0;
+		int updated = 0;
+		int noBPartner = 0;
 		int invalid = 0;
 		int errors = 0;
 
@@ -103,58 +98,60 @@ public class ImportKoboSubmissions extends SvrProcess {
 				invalid++;
 				continue;
 			}
-			long koboId = idElement.getAsLong();
-			String searchKey = "KOBO-" + koboId;
+			String koboId = idElement.getAsString().trim();
 
-			String nombre = getField(submission, FIELD_NAME);
-			if (Util.isEmpty(nombre, true)) {
-				log.warning("Submission " + koboId + " sin nombre — omitido");
+			String taxId = getField(submission, FIELD_TAXID);
+			if (Util.isEmpty(taxId, true)) {
+				log.warning("Submission " + koboId + " sin TaxID — omitido");
 				invalid++;
 				continue;
 			}
 
-			int existingId = DB.getSQLValue(null,
-					"SELECT C_BPartner_ID FROM C_BPartner WHERE Value=? AND AD_Client_ID=?",
-					searchKey, getAD_Client_ID());
-			if (existingId > 0) {
-				skipped++;
+			int bpartnerId = DB.getSQLValue(null,
+					"SELECT C_BPartner_ID FROM C_BPartner"
+					+ " WHERE TaxID=? AND AD_Client_ID=? AND IsActive='Y'"
+					+ " ORDER BY C_BPartner_ID",
+					taxId, getAD_Client_ID());
+			if (bpartnerId <= 0) {
+				log.warning("Submission " + koboId + ": no existe Tercero con TaxID "
+						+ taxId + " — omitido");
+				noBPartner++;
 				continue;
 			}
 
-			String taxId = getField(submission, FIELD_TAXID);
-			String phone = getField(submission, FIELD_PHONE);
-			String email = getField(submission, FIELD_EMAIL);
+			String naturalPerson = getField(submission, FIELD_NATURAL);
+			String gender = toGenderListValue(getField(submission, FIELD_GENDER));
 
 			String trxName = Trx.createTrxName("KoboImp");
 			Trx trx = Trx.get(trxName, true);
 			try {
-				MBPartner bp = new MBPartner(getCtx(), 0, trxName);
-				bp.setAD_Org_ID(p_OrgId);
-				bp.setValue(searchKey);
-				bp.setName(nombre);
-				bp.setC_BP_Group_ID(p_BPGroupId);
-				bp.setIsCustomer(true);
-				if (!Util.isEmpty(taxId, true))
-					bp.setTaxID(taxId);
-				bp.setDescription("KoboToolbox submission " + koboId);
-				bp.saveEx();
-
-				if (!Util.isEmpty(email, true) || !Util.isEmpty(phone, true)) {
-					MUser user = new MUser(getCtx(), 0, trxName);
-					user.setAD_Org_ID(p_OrgId);
-					user.setC_BPartner_ID(bp.getC_BPartner_ID());
-					user.setName(nombre);
-					if (!Util.isEmpty(email, true))
-						user.setEMail(email);
-					if (!Util.isEmpty(phone, true))
-						user.setPhone(phone);
-					user.saveEx();
+				X_C_BPartner_Extradata extra = new Query(getCtx(),
+						I_C_BPartner_Extradata.Table_Name,
+						I_C_BPartner_Extradata.COLUMNNAME_KoboSubmissionID + "=?", trxName)
+						.setParameters(koboId)
+						.setClient_ID()
+						.first();
+				boolean isNew = extra == null;
+				if (isNew) {
+					extra = new X_C_BPartner_Extradata(getCtx(), 0, trxName);
+					extra.setAD_Org_ID(p_OrgId);
+					extra.setKoboSubmissionID(koboId);
 				}
+				extra.setC_BPartner_ID(bpartnerId);
+				// "Persona Natural" es una pregunta acknowledge de Kobo: llega "OK" cuando fue marcada
+				extra.setIsNaturalPerson(!Util.isEmpty(naturalPerson, true));
+				extra.setGender(gender);
+				extra.saveEx();
 
 				trx.commit(true);
-				created++;
-				addLog(bp.getC_BPartner_ID(), null, null, searchKey + " - " + nombre,
-						MBPartner.Table_ID, bp.getC_BPartner_ID());
+				if (isNew)
+					created++;
+				else
+					updated++;
+				addLog(extra.getC_BPartner_Extradata_ID(), null, null,
+						"Kobo " + koboId + " -> TaxID " + taxId
+						+ (isNew ? " (nuevo)" : " (actualizado)"),
+						I_C_BPartner_Extradata.Table_ID, extra.getC_BPartner_Extradata_ID());
 			} catch (Exception e) {
 				trx.rollback();
 				log.log(Level.SEVERE, "Error submission " + koboId + ": " + e.getMessage(), e);
@@ -164,22 +161,47 @@ public class ImportKoboSubmissions extends SvrProcess {
 			}
 		}
 
-		return "Creados: " + created + " | Omitidos: " + skipped
+		return "Creados: " + created + " | Actualizados: " + updated
+				+ " | Sin Tercero: " + noBPartner
 				+ " | Inválidos: " + invalid + " | Errores: " + errors;
 	}
 
 	/**
 	 * Obtiene el valor de un campo del submission. Primero match exacto;
+	 * si no, la variante con "_" en lugar de espacios (nombres XML de Kobo);
 	 * si no, match por sufijo "grupo/campo" (soporte de grupos de Kobo).
 	 */
 	private String getField(JsonObject sub, String fieldName) {
-		if (sub.has(fieldName) && !sub.get(fieldName).isJsonNull())
-			return sub.get(fieldName).getAsString().trim();
-
-		for (Map.Entry<String, JsonElement> e : sub.entrySet()) {
-			if (e.getKey().endsWith("/" + fieldName) && !e.getValue().isJsonNull())
-				return e.getValue().getAsString().trim();
+		String[] candidates = { fieldName, fieldName.replace(' ', '_') };
+		for (String candidate : candidates) {
+			if (sub.has(candidate) && !sub.get(candidate).isJsonNull())
+				return sub.get(candidate).getAsString().trim();
 		}
+		for (Map.Entry<String, JsonElement> e : sub.entrySet()) {
+			for (String candidate : candidates) {
+				if (e.getKey().endsWith("/" + candidate) && !e.getValue().isJsonNull())
+					return e.getValue().getAsString().trim();
+			}
+		}
+		return null;
+	}
+
+	/**
+	 * Mapea el valor de "Genero" del formulario Kobo (ej. MASCULINO/FEMENINO/
+	 * SUBREPRESENTADO, en cualquier capitalización) al valor de la lista
+	 * Gender de C_BPartner_Extradata (MA/FE/SU). Devuelve null si no matchea.
+	 */
+	private String toGenderListValue(String koboGender) {
+		if (Util.isEmpty(koboGender, true))
+			return null;
+		String value = koboGender.trim().toUpperCase();
+		if (value.startsWith("MASCUL"))
+			return X_C_BPartner_Extradata.GENDER_Masculino;
+		if (value.startsWith("FEMEN"))
+			return X_C_BPartner_Extradata.GENDER_Femenino;
+		if (value.startsWith("SUBREPRESENT"))
+			return X_C_BPartner_Extradata.GENDER_Subrepresentado;
+		log.warning("Genero no reconocido: " + koboGender);
 		return null;
 	}
 }
