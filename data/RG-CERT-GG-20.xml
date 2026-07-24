@@ -1,0 +1,1583 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:odk="http://www.opendatakit.org/xforms">
+  <h:head>
+    <h:title>Verificación técnica de instalaciones y control agrícola</h:title>
+    <model odk:xforms-version="1.0.0">
+      <instance>
+        <a8wgTaSFucEDpNWvaMzqdU id="verificacion_tecnica_productores">
+          <hora_inicio/>
+          <hora_fin/>
+          <fecha_sistema/>
+          <usuario_app/>
+          <id_dispositivo/>
+          <datos_generales>
+            <codigo_productor/>
+            <nombre_productor/>
+            <fecha_visita/>
+            <semana/>
+            <tipo_visita/>
+            <tecnico_responsable/>
+            <ubicacion_visita/>
+          </datos_generales>
+          <clave_unica/>
+          <infraestructura>
+            <ayuda_infra/>
+            <empacadora>
+              <emp_piso/>
+              <emp_piso_pts/>
+              <emp_malla_saran/>
+              <emp_malla_saran_pts/>
+              <emp_facil_limpieza/>
+              <emp_facil_limpieza_pts/>
+              <emp_perimetro/>
+              <emp_perimetro_pts/>
+              <emp_estructura_metalica/>
+              <emp_estructura_metalica_pts/>
+            </empacadora>
+            <bodega_quimicos>
+              <bq_repisas/>
+              <bq_repisas_pts/>
+              <bq_ventilada/>
+              <bq_ventilada_pts/>
+              <bq_bajo_llave/>
+              <bq_bajo_llave_pts/>
+            </bodega_quimicos>
+            <bodega_carton>
+              <bc_puerta_orden/>
+              <bc_puerta_orden_pts/>
+            </bodega_carton>
+            <zona_mezcla>
+              <zm_ducha_lavaojos/>
+              <zm_ducha_lavaojos_pts/>
+              <zm_borde_retencion/>
+              <zm_borde_retencion_pts/>
+              <zm_fosa_descontaminacion/>
+              <zm_fosa_descontaminacion_pts/>
+            </zona_mezcla>
+            <patio_racimos>
+              <pr_piso/>
+              <pr_piso_pts/>
+              <pr_limpio/>
+              <pr_limpio_pts/>
+              <pr_techo/>
+              <pr_techo_pts/>
+            </patio_racimos>
+            <pediluvio>
+              <ped_agua_clorada/>
+              <ped_agua_clorada_pts/>
+              <ped_desague/>
+              <ped_desague_pts/>
+              <ped_ingreso/>
+              <ped_ingreso_pts/>
+            </pediluvio>
+            <fosa_descontaminacion>
+              <fd_tapa/>
+              <fd_tapa_pts/>
+              <fd_limpia/>
+              <fd_limpia_pts/>
+            </fosa_descontaminacion>
+            <bano>
+              <bano_agua/>
+              <bano_agua_pts/>
+              <bano_basurero/>
+              <bano_basurero_pts/>
+              <bano_papel/>
+              <bano_papel_pts/>
+            </bano>
+            <lavamanos>
+              <lav_agua/>
+              <lav_agua_pts/>
+              <lav_desague/>
+              <lav_desague_pts/>
+              <lav_jabon/>
+              <lav_jabon_pts/>
+              <lav_toalla/>
+              <lav_toalla_pts/>
+            </lavamanos>
+            <puntaje_infraestructura/>
+            <resumen_infra/>
+          </infraestructura>
+          <equipos>
+            <ayuda_equipos/>
+            <lavado_protectores>
+              <e_lpr_tanque/>
+              <e_lpr_tanque_pts/>
+              <e_lpr_tendedero/>
+              <e_lpr_tendedero_pts/>
+            </lavado_protectores>
+            <tinas>
+              <e_tinas_estado/>
+              <e_tinas_estado_pts/>
+              <e_tinas_numero/>
+              <e_tinas_numero_pts/>
+            </tinas>
+            <balanza>
+              <e_balanza_estado/>
+              <e_balanza_estado_pts/>
+              <e_balanza_calibrada/>
+              <e_balanza_calibrada_pts/>
+            </balanza>
+            <platos>
+              <e_platos_estado/>
+              <e_platos_estado_pts/>
+              <e_platos_protectores/>
+              <e_platos_protectores_pts/>
+            </platos>
+            <otros_equipos>
+              <e_calibrador/>
+              <e_calibrador_pts/>
+              <e_mesa_acolchada/>
+              <e_mesa_acolchada_pts/>
+              <e_mesa_facil_limpieza/>
+              <e_mesa_facil_limpieza_pts/>
+              <e_dosificadores/>
+              <e_dosificadores_pts/>
+            </otros_equipos>
+            <puntaje_equipos/>
+            <resumen_equipos/>
+          </equipos>
+          <higiene_inocuidad_sso>
+            <ayuda_higiene/>
+            <h_racimos>
+              <h_racimos_colgadero/>
+              <h_racimos_colgadero_pts/>
+            </h_racimos>
+            <h_cultivo>
+              <h_cultivo_sin_basura/>
+              <h_cultivo_sin_basura_pts/>
+              <h_cultivo_sin_animales/>
+              <h_cultivo_sin_animales_pts/>
+              <h_cultivo_sin_vertidos/>
+              <h_cultivo_sin_vertidos_pts/>
+            </h_cultivo>
+            <h_residuos>
+              <h_sin_raquis/>
+              <h_sin_raquis_pts/>
+              <h_retiro_restos/>
+              <h_retiro_restos_pts/>
+            </h_residuos>
+            <h_envases>
+              <h_envases_triple_lavado/>
+              <h_envases_triple_lavado_pts/>
+            </h_envases>
+            <h_empacadora>
+              <h_empacadora_limpia/>
+              <h_empacadora_limpia_pts/>
+              <h_empacadora_sin_animales/>
+              <h_empacadora_sin_animales_pts/>
+            </h_empacadora>
+            <h_inmediaciones>
+              <h_inmediaciones_limpias/>
+              <h_inmediaciones_limpias_pts/>
+            </h_inmediaciones>
+            <h_cloracion>
+              <h_cloracion_correcta/>
+              <h_cloracion_correcta_pts/>
+            </h_cloracion>
+            <h_almacenamiento>
+              <h_materiales_palets/>
+              <h_materiales_palets_pts/>
+              <h_fruta_palets/>
+              <h_fruta_palets_pts/>
+            </h_almacenamiento>
+            <h_registros>
+              <h_carpeta_actualizada/>
+              <h_carpeta_actualizada_pts/>
+            </h_registros>
+            <h_epp>
+              <h_epp_general/>
+              <h_epp_general_pts/>
+              <h_epp_tinas/>
+              <h_epp_tinas_pts/>
+              <h_epp_enfunde/>
+              <h_epp_enfunde_pts/>
+            </h_epp>
+            <h_trabajadores>
+              <h_usan_lavamanos/>
+              <h_usan_lavamanos_pts/>
+              <h_area_alimentos/>
+              <h_area_alimentos_pts/>
+              <h_sin_accesorios/>
+              <h_sin_accesorios_pts/>
+            </h_trabajadores>
+            <h_emergencia>
+              <h_botiquin_extintor/>
+              <h_botiquin_extintor_pts/>
+            </h_emergencia>
+            <puntaje_higiene/>
+            <resumen_higiene/>
+          </higiene_inocuidad_sso>
+          <postcosecha>
+            <ayuda_post/>
+            <criterios_postcosecha>
+              <pc_ph_rango/>
+              <pc_ph_rango_pts/>
+              <pc_tina_fruta/>
+              <pc_tina_fruta_pts/>
+              <pc_cambio_agua/>
+              <pc_cambio_agua_pts/>
+              <pc_platos/>
+              <pc_platos_pts/>
+              <pc_saneo/>
+              <pc_saneo_pts/>
+              <pc_esquineros/>
+              <pc_esquineros_pts/>
+              <pc_inmersion/>
+              <pc_inmersion_pts/>
+              <pc_dosificacion/>
+              <pc_dosificacion_pts/>
+              <pc_aspersor/>
+              <pc_aspersor_pts/>
+              <pc_aspersion/>
+              <pc_aspersion_pts/>
+            </criterios_postcosecha>
+            <puntaje_postcosecha/>
+            <resumen_postcosecha/>
+          </postcosecha>
+          <calidad_cajas>
+            <cajas_evaluadas/>
+            <cajas_dano_mecanico/>
+            <cajas_dano_insectos/>
+            <cajas_dano_hongos/>
+            <cajas_presencia_insectos/>
+            <grado_color_correcto/>
+            <total_no_conformidades/>
+            <resumen_calidad/>
+          </calidad_cajas>
+          <control_agricola>
+            <ayuda_agri/>
+            <monitoreo_plagas>
+              <ag_sin_thrips/>
+              <ag_sin_thrips_pts/>
+              <ag_sin_pulgon/>
+              <ag_sin_pulgon_pts/>
+              <ag_sin_cochinilla/>
+              <ag_sin_cochinilla_pts/>
+              <ag_sin_hormigas/>
+              <ag_sin_hormigas_pts/>
+            </monitoreo_plagas>
+            <monitoreo_enfermedades>
+              <ag_sin_punta_cigarro/>
+              <ag_sin_punta_cigarro_pts/>
+              <ag_sin_fusarium_r4/>
+              <ag_sin_fusarium_r4_pts/>
+              <ag_sin_moko/>
+              <ag_sin_moko_pts/>
+              <ag_sin_sigatoka/>
+              <ag_sin_sigatoka_pts/>
+            </monitoreo_enfermedades>
+            <labores_culturales>
+              <ag_control_maleza/>
+              <ag_control_maleza_pts/>
+              <ag_deshoje/>
+              <ag_deshoje_pts/>
+              <ag_deshije/>
+              <ag_deshije_pts/>
+              <ag_deschante/>
+              <ag_deschante_pts/>
+              <ag_destalle/>
+              <ag_destalle_pts/>
+              <ag_resiembra/>
+              <ag_resiembra_pts/>
+            </labores_culturales>
+            <labores_enfunde>
+              <ag_cinta_correcta/>
+              <ag_cinta_correcta_pts/>
+              <ag_racimos_daypas/>
+              <ag_racimos_daypas_pts/>
+              <ag_deschive_desflore/>
+              <ag_deschive_desflore_pts/>
+            </labores_enfunde>
+            <labores_opcionales>
+              <ag_control_hormigas/>
+              <ag_control_hormigas_pts/>
+              <ag_control_sigatoka/>
+              <ag_control_sigatoka_pts/>
+            </labores_opcionales>
+            <fertilizacion>
+              <ag_fertilizo/>
+              <ag_fertilizo_pts/>
+              <ag_plan_definido/>
+              <ag_plan_definido_pts/>
+              <ag_fertilizo_finca/>
+              <ag_fertilizo_finca_pts/>
+              <ag_enraizamiento/>
+              <ag_enraizamiento_pts/>
+              <ag_fertilizacion_edafica/>
+              <ag_fertilizacion_edafica_pts/>
+              <tipo_plan_fertilizacion/>
+              <productos_fertilizacion/>
+              <numero_fases_fertilizacion/>
+            </fertilizacion>
+            <fecha_limite_cumplimiento/>
+            <puntaje_agricola/>
+            <calificacion_agricola/>
+            <resumen_agricola/>
+          </control_agricola>
+          <puntaje_global/>
+          <porcentaje_global/>
+          <cierre>
+            <resumen_global/>
+            <observaciones/>
+            <recomendaciones/>
+            <foto_evidencia/>
+            <productor_presente/>
+            <nombre_firmante/>
+            <firma_productor/>
+            <motivo_sin_firma/>
+          </cierre>
+          <meta>
+            <instanceID/>
+            <instanceName/>
+          </meta>
+        </a8wgTaSFucEDpNWvaMzqdU>
+      </instance>
+      <instance id="escala_210">
+        <root>
+          <item>
+            <name>tiene</name>
+            <label>Tiene (2)</label>
+          </item>
+          <item>
+            <name>parcial</name>
+            <label>Parcial (1)</label>
+          </item>
+          <item>
+            <name>no_tiene</name>
+            <label>No tiene (0)</label>
+          </item>
+        </root>
+      </instance>
+      <instance id="cumple_no">
+        <root>
+          <item>
+            <name>cumple</name>
+            <label>Cumple (1)</label>
+          </item>
+          <item>
+            <name>no_cumple</name>
+            <label>No cumple (0)</label>
+          </item>
+        </root>
+      </instance>
+      <instance id="cumple_na">
+        <root>
+          <item>
+            <name>cumple</name>
+            <label>Cumple (1)</label>
+          </item>
+          <item>
+            <name>no_cumple</name>
+            <label>No cumple (0)</label>
+          </item>
+          <item>
+            <name>no_aplica</name>
+            <label>No aplica (1)</label>
+          </item>
+        </root>
+      </instance>
+      <instance id="si_no">
+        <root>
+          <item>
+            <name>si</name>
+            <label>Sí</label>
+          </item>
+          <item>
+            <name>no</name>
+            <label>No</label>
+          </item>
+        </root>
+      </instance>
+      <instance id="tipo_visita">
+        <root>
+          <item>
+            <name>primera</name>
+            <label>Primera visita</label>
+          </item>
+          <item>
+            <name>seguimiento</name>
+            <label>Seguimiento</label>
+          </item>
+          <item>
+            <name>verificacion</name>
+            <label>Verificación</label>
+          </item>
+          <item>
+            <name>otra</name>
+            <label>Otra</label>
+          </item>
+        </root>
+      </instance>
+      <instance id="tipo_plan">
+        <root>
+          <item>
+            <name>propio</name>
+            <label>Plan propio</label>
+          </item>
+          <item>
+            <name>flp</name>
+            <label>Plan de fertilización FLP</label>
+          </item>
+          <item>
+            <name>otro</name>
+            <label>Otro plan</label>
+          </item>
+          <item>
+            <name>no_definido</name>
+            <label>No definido</label>
+          </item>
+        </root>
+      </instance>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/hora_inicio" jr:preload="timestamp" type="dateTime" jr:preloadParams="start"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/hora_fin" jr:preload="timestamp" type="dateTime" jr:preloadParams="end"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/fecha_sistema" jr:preload="date" type="date" jr:preloadParams="today"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/usuario_app" jr:preload="property" type="string" jr:preloadParams="username"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/id_dispositivo" jr:preload="property" type="string" jr:preloadParams="deviceid"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/datos_generales/codigo_productor" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/datos_generales/nombre_productor" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/datos_generales/fecha_visita" type="date" required="true()"/>
+      <setvalue ref="/a8wgTaSFucEDpNWvaMzqdU/datos_generales/fecha_visita" value="today()" event="odk-instance-first-load"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/datos_generales/semana" type="int" required="true()" constraint=". &gt;= 1 and . &lt;= 53" jr:constraintMsg="Ingrese una semana entre 1 y 53."/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/datos_generales/tipo_visita" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/datos_generales/tecnico_responsable" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/datos_generales/ubicacion_visita" type="geopoint" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/clave_unica" type="string" calculate="concat( /a8wgTaSFucEDpNWvaMzqdU/datos_generales/codigo_productor , '-', format-date( /a8wgTaSFucEDpNWvaMzqdU/datos_generales/fecha_visita , '%Y-%m-%d'))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/ayuda_infra" readonly="true()" type="string"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/empacadora/emp_piso" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/empacadora/emp_piso_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/infraestructura/empacadora/emp_piso  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/infraestructura/empacadora/emp_piso  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/empacadora/emp_malla_saran" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/empacadora/emp_malla_saran_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/infraestructura/empacadora/emp_malla_saran  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/infraestructura/empacadora/emp_malla_saran  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/empacadora/emp_facil_limpieza" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/empacadora/emp_facil_limpieza_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/infraestructura/empacadora/emp_facil_limpieza  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/infraestructura/empacadora/emp_facil_limpieza  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/empacadora/emp_perimetro" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/empacadora/emp_perimetro_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/infraestructura/empacadora/emp_perimetro  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/infraestructura/empacadora/emp_perimetro  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/empacadora/emp_estructura_metalica" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/empacadora/emp_estructura_metalica_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/infraestructura/empacadora/emp_estructura_metalica  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/infraestructura/empacadora/emp_estructura_metalica  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/bodega_quimicos/bq_repisas" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/bodega_quimicos/bq_repisas_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/infraestructura/bodega_quimicos/bq_repisas  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/infraestructura/bodega_quimicos/bq_repisas  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/bodega_quimicos/bq_ventilada" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/bodega_quimicos/bq_ventilada_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/infraestructura/bodega_quimicos/bq_ventilada  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/infraestructura/bodega_quimicos/bq_ventilada  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/bodega_quimicos/bq_bajo_llave" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/bodega_quimicos/bq_bajo_llave_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/infraestructura/bodega_quimicos/bq_bajo_llave  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/infraestructura/bodega_quimicos/bq_bajo_llave  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/bodega_carton/bc_puerta_orden" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/bodega_carton/bc_puerta_orden_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/infraestructura/bodega_carton/bc_puerta_orden  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/infraestructura/bodega_carton/bc_puerta_orden  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/zona_mezcla/zm_ducha_lavaojos" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/zona_mezcla/zm_ducha_lavaojos_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/infraestructura/zona_mezcla/zm_ducha_lavaojos  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/infraestructura/zona_mezcla/zm_ducha_lavaojos  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/zona_mezcla/zm_borde_retencion" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/zona_mezcla/zm_borde_retencion_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/infraestructura/zona_mezcla/zm_borde_retencion  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/infraestructura/zona_mezcla/zm_borde_retencion  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/zona_mezcla/zm_fosa_descontaminacion" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/zona_mezcla/zm_fosa_descontaminacion_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/infraestructura/zona_mezcla/zm_fosa_descontaminacion  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/infraestructura/zona_mezcla/zm_fosa_descontaminacion  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/patio_racimos/pr_piso" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/patio_racimos/pr_piso_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/infraestructura/patio_racimos/pr_piso  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/infraestructura/patio_racimos/pr_piso  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/patio_racimos/pr_limpio" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/patio_racimos/pr_limpio_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/infraestructura/patio_racimos/pr_limpio  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/infraestructura/patio_racimos/pr_limpio  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/patio_racimos/pr_techo" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/patio_racimos/pr_techo_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/infraestructura/patio_racimos/pr_techo  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/infraestructura/patio_racimos/pr_techo  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/pediluvio/ped_agua_clorada" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/pediluvio/ped_agua_clorada_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/infraestructura/pediluvio/ped_agua_clorada  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/infraestructura/pediluvio/ped_agua_clorada  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/pediluvio/ped_desague" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/pediluvio/ped_desague_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/infraestructura/pediluvio/ped_desague  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/infraestructura/pediluvio/ped_desague  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/pediluvio/ped_ingreso" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/pediluvio/ped_ingreso_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/infraestructura/pediluvio/ped_ingreso  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/infraestructura/pediluvio/ped_ingreso  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/fosa_descontaminacion/fd_tapa" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/fosa_descontaminacion/fd_tapa_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/infraestructura/fosa_descontaminacion/fd_tapa  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/infraestructura/fosa_descontaminacion/fd_tapa  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/fosa_descontaminacion/fd_limpia" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/fosa_descontaminacion/fd_limpia_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/infraestructura/fosa_descontaminacion/fd_limpia  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/infraestructura/fosa_descontaminacion/fd_limpia  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/bano/bano_agua" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/bano/bano_agua_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/infraestructura/bano/bano_agua  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/infraestructura/bano/bano_agua  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/bano/bano_basurero" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/bano/bano_basurero_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/infraestructura/bano/bano_basurero  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/infraestructura/bano/bano_basurero  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/bano/bano_papel" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/bano/bano_papel_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/infraestructura/bano/bano_papel  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/infraestructura/bano/bano_papel  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/lavamanos/lav_agua" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/lavamanos/lav_agua_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/infraestructura/lavamanos/lav_agua  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/infraestructura/lavamanos/lav_agua  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/lavamanos/lav_desague" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/lavamanos/lav_desague_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/infraestructura/lavamanos/lav_desague  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/infraestructura/lavamanos/lav_desague  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/lavamanos/lav_jabon" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/lavamanos/lav_jabon_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/infraestructura/lavamanos/lav_jabon  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/infraestructura/lavamanos/lav_jabon  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/lavamanos/lav_toalla" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/lavamanos/lav_toalla_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/infraestructura/lavamanos/lav_toalla  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/infraestructura/lavamanos/lav_toalla  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/puntaje_infraestructura" type="string" calculate=" /a8wgTaSFucEDpNWvaMzqdU/infraestructura/empacadora/emp_piso_pts  +  /a8wgTaSFucEDpNWvaMzqdU/infraestructura/empacadora/emp_malla_saran_pts  +  /a8wgTaSFucEDpNWvaMzqdU/infraestructura/empacadora/emp_facil_limpieza_pts  +  /a8wgTaSFucEDpNWvaMzqdU/infraestructura/empacadora/emp_perimetro_pts  +  /a8wgTaSFucEDpNWvaMzqdU/infraestructura/empacadora/emp_estructura_metalica_pts  +  /a8wgTaSFucEDpNWvaMzqdU/infraestructura/bodega_quimicos/bq_repisas_pts  +  /a8wgTaSFucEDpNWvaMzqdU/infraestructura/bodega_quimicos/bq_ventilada_pts  +  /a8wgTaSFucEDpNWvaMzqdU/infraestructura/bodega_quimicos/bq_bajo_llave_pts  +  /a8wgTaSFucEDpNWvaMzqdU/infraestructura/bodega_carton/bc_puerta_orden_pts  +  /a8wgTaSFucEDpNWvaMzqdU/infraestructura/zona_mezcla/zm_ducha_lavaojos_pts  +  /a8wgTaSFucEDpNWvaMzqdU/infraestructura/zona_mezcla/zm_borde_retencion_pts  +  /a8wgTaSFucEDpNWvaMzqdU/infraestructura/zona_mezcla/zm_fosa_descontaminacion_pts  +  /a8wgTaSFucEDpNWvaMzqdU/infraestructura/patio_racimos/pr_piso_pts  +  /a8wgTaSFucEDpNWvaMzqdU/infraestructura/patio_racimos/pr_limpio_pts  +  /a8wgTaSFucEDpNWvaMzqdU/infraestructura/patio_racimos/pr_techo_pts  +  /a8wgTaSFucEDpNWvaMzqdU/infraestructura/pediluvio/ped_agua_clorada_pts  +  /a8wgTaSFucEDpNWvaMzqdU/infraestructura/pediluvio/ped_desague_pts  +  /a8wgTaSFucEDpNWvaMzqdU/infraestructura/pediluvio/ped_ingreso_pts  +  /a8wgTaSFucEDpNWvaMzqdU/infraestructura/fosa_descontaminacion/fd_tapa_pts  +  /a8wgTaSFucEDpNWvaMzqdU/infraestructura/fosa_descontaminacion/fd_limpia_pts  +  /a8wgTaSFucEDpNWvaMzqdU/infraestructura/bano/bano_agua_pts  +  /a8wgTaSFucEDpNWvaMzqdU/infraestructura/bano/bano_basurero_pts  +  /a8wgTaSFucEDpNWvaMzqdU/infraestructura/bano/bano_papel_pts  +  /a8wgTaSFucEDpNWvaMzqdU/infraestructura/lavamanos/lav_agua_pts  +  /a8wgTaSFucEDpNWvaMzqdU/infraestructura/lavamanos/lav_desague_pts  +  /a8wgTaSFucEDpNWvaMzqdU/infraestructura/lavamanos/lav_jabon_pts  +  /a8wgTaSFucEDpNWvaMzqdU/infraestructura/lavamanos/lav_toalla_pts "/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/resumen_infra" readonly="true()" type="string"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/equipos/ayuda_equipos" readonly="true()" type="string"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/equipos/lavado_protectores/e_lpr_tanque" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/equipos/lavado_protectores/e_lpr_tanque_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/equipos/lavado_protectores/e_lpr_tanque  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/equipos/lavado_protectores/e_lpr_tanque  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/equipos/lavado_protectores/e_lpr_tendedero" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/equipos/lavado_protectores/e_lpr_tendedero_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/equipos/lavado_protectores/e_lpr_tendedero  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/equipos/lavado_protectores/e_lpr_tendedero  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/equipos/tinas/e_tinas_estado" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/equipos/tinas/e_tinas_estado_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/equipos/tinas/e_tinas_estado  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/equipos/tinas/e_tinas_estado  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/equipos/tinas/e_tinas_numero" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/equipos/tinas/e_tinas_numero_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/equipos/tinas/e_tinas_numero  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/equipos/tinas/e_tinas_numero  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/equipos/balanza/e_balanza_estado" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/equipos/balanza/e_balanza_estado_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/equipos/balanza/e_balanza_estado  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/equipos/balanza/e_balanza_estado  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/equipos/balanza/e_balanza_calibrada" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/equipos/balanza/e_balanza_calibrada_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/equipos/balanza/e_balanza_calibrada  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/equipos/balanza/e_balanza_calibrada  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/equipos/platos/e_platos_estado" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/equipos/platos/e_platos_estado_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/equipos/platos/e_platos_estado  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/equipos/platos/e_platos_estado  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/equipos/platos/e_platos_protectores" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/equipos/platos/e_platos_protectores_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/equipos/platos/e_platos_protectores  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/equipos/platos/e_platos_protectores  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/equipos/otros_equipos/e_calibrador" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/equipos/otros_equipos/e_calibrador_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/equipos/otros_equipos/e_calibrador  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/equipos/otros_equipos/e_calibrador  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/equipos/otros_equipos/e_mesa_acolchada" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/equipos/otros_equipos/e_mesa_acolchada_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/equipos/otros_equipos/e_mesa_acolchada  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/equipos/otros_equipos/e_mesa_acolchada  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/equipos/otros_equipos/e_mesa_facil_limpieza" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/equipos/otros_equipos/e_mesa_facil_limpieza_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/equipos/otros_equipos/e_mesa_facil_limpieza  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/equipos/otros_equipos/e_mesa_facil_limpieza  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/equipos/otros_equipos/e_dosificadores" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/equipos/otros_equipos/e_dosificadores_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/equipos/otros_equipos/e_dosificadores  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/equipos/otros_equipos/e_dosificadores  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/equipos/puntaje_equipos" type="string" calculate=" /a8wgTaSFucEDpNWvaMzqdU/equipos/lavado_protectores/e_lpr_tanque_pts  +  /a8wgTaSFucEDpNWvaMzqdU/equipos/lavado_protectores/e_lpr_tendedero_pts  +  /a8wgTaSFucEDpNWvaMzqdU/equipos/tinas/e_tinas_estado_pts  +  /a8wgTaSFucEDpNWvaMzqdU/equipos/tinas/e_tinas_numero_pts  +  /a8wgTaSFucEDpNWvaMzqdU/equipos/balanza/e_balanza_estado_pts  +  /a8wgTaSFucEDpNWvaMzqdU/equipos/balanza/e_balanza_calibrada_pts  +  /a8wgTaSFucEDpNWvaMzqdU/equipos/platos/e_platos_estado_pts  +  /a8wgTaSFucEDpNWvaMzqdU/equipos/platos/e_platos_protectores_pts  +  /a8wgTaSFucEDpNWvaMzqdU/equipos/otros_equipos/e_calibrador_pts  +  /a8wgTaSFucEDpNWvaMzqdU/equipos/otros_equipos/e_mesa_acolchada_pts  +  /a8wgTaSFucEDpNWvaMzqdU/equipos/otros_equipos/e_mesa_facil_limpieza_pts  +  /a8wgTaSFucEDpNWvaMzqdU/equipos/otros_equipos/e_dosificadores_pts "/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/equipos/resumen_equipos" readonly="true()" type="string"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/ayuda_higiene" readonly="true()" type="string"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_racimos/h_racimos_colgadero" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_racimos/h_racimos_colgadero_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_racimos/h_racimos_colgadero  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_racimos/h_racimos_colgadero  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_cultivo/h_cultivo_sin_basura" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_cultivo/h_cultivo_sin_basura_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_cultivo/h_cultivo_sin_basura  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_cultivo/h_cultivo_sin_basura  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_cultivo/h_cultivo_sin_animales" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_cultivo/h_cultivo_sin_animales_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_cultivo/h_cultivo_sin_animales  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_cultivo/h_cultivo_sin_animales  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_cultivo/h_cultivo_sin_vertidos" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_cultivo/h_cultivo_sin_vertidos_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_cultivo/h_cultivo_sin_vertidos  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_cultivo/h_cultivo_sin_vertidos  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_residuos/h_sin_raquis" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_residuos/h_sin_raquis_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_residuos/h_sin_raquis  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_residuos/h_sin_raquis  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_residuos/h_retiro_restos" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_residuos/h_retiro_restos_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_residuos/h_retiro_restos  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_residuos/h_retiro_restos  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_envases/h_envases_triple_lavado" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_envases/h_envases_triple_lavado_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_envases/h_envases_triple_lavado  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_envases/h_envases_triple_lavado  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_empacadora/h_empacadora_limpia" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_empacadora/h_empacadora_limpia_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_empacadora/h_empacadora_limpia  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_empacadora/h_empacadora_limpia  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_empacadora/h_empacadora_sin_animales" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_empacadora/h_empacadora_sin_animales_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_empacadora/h_empacadora_sin_animales  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_empacadora/h_empacadora_sin_animales  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_inmediaciones/h_inmediaciones_limpias" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_inmediaciones/h_inmediaciones_limpias_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_inmediaciones/h_inmediaciones_limpias  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_inmediaciones/h_inmediaciones_limpias  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_cloracion/h_cloracion_correcta" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_cloracion/h_cloracion_correcta_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_cloracion/h_cloracion_correcta  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_cloracion/h_cloracion_correcta  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_almacenamiento/h_materiales_palets" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_almacenamiento/h_materiales_palets_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_almacenamiento/h_materiales_palets  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_almacenamiento/h_materiales_palets  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_almacenamiento/h_fruta_palets" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_almacenamiento/h_fruta_palets_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_almacenamiento/h_fruta_palets  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_almacenamiento/h_fruta_palets  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_registros/h_carpeta_actualizada" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_registros/h_carpeta_actualizada_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_registros/h_carpeta_actualizada  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_registros/h_carpeta_actualizada  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_epp/h_epp_general" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_epp/h_epp_general_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_epp/h_epp_general  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_epp/h_epp_general  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_epp/h_epp_tinas" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_epp/h_epp_tinas_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_epp/h_epp_tinas  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_epp/h_epp_tinas  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_epp/h_epp_enfunde" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_epp/h_epp_enfunde_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_epp/h_epp_enfunde  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_epp/h_epp_enfunde  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_trabajadores/h_usan_lavamanos" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_trabajadores/h_usan_lavamanos_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_trabajadores/h_usan_lavamanos  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_trabajadores/h_usan_lavamanos  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_trabajadores/h_area_alimentos" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_trabajadores/h_area_alimentos_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_trabajadores/h_area_alimentos  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_trabajadores/h_area_alimentos  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_trabajadores/h_sin_accesorios" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_trabajadores/h_sin_accesorios_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_trabajadores/h_sin_accesorios  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_trabajadores/h_sin_accesorios  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_emergencia/h_botiquin_extintor" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_emergencia/h_botiquin_extintor_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_emergencia/h_botiquin_extintor  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_emergencia/h_botiquin_extintor  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/puntaje_higiene" type="string" calculate=" /a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_racimos/h_racimos_colgadero_pts  +  /a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_cultivo/h_cultivo_sin_basura_pts  +  /a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_cultivo/h_cultivo_sin_animales_pts  +  /a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_cultivo/h_cultivo_sin_vertidos_pts  +  /a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_residuos/h_sin_raquis_pts  +  /a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_residuos/h_retiro_restos_pts  +  /a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_envases/h_envases_triple_lavado_pts  +  /a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_empacadora/h_empacadora_limpia_pts  +  /a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_empacadora/h_empacadora_sin_animales_pts  +  /a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_inmediaciones/h_inmediaciones_limpias_pts  +  /a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_cloracion/h_cloracion_correcta_pts  +  /a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_almacenamiento/h_materiales_palets_pts  +  /a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_almacenamiento/h_fruta_palets_pts  +  /a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_registros/h_carpeta_actualizada_pts  +  /a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_epp/h_epp_general_pts  +  /a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_epp/h_epp_tinas_pts  +  /a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_epp/h_epp_enfunde_pts  +  /a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_trabajadores/h_usan_lavamanos_pts  +  /a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_trabajadores/h_area_alimentos_pts  +  /a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_trabajadores/h_sin_accesorios_pts  +  /a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_emergencia/h_botiquin_extintor_pts "/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/resumen_higiene" readonly="true()" type="string"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/postcosecha/ayuda_post" readonly="true()" type="string"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/postcosecha/criterios_postcosecha/pc_ph_rango" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/postcosecha/criterios_postcosecha/pc_ph_rango_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/postcosecha/criterios_postcosecha/pc_ph_rango  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/postcosecha/criterios_postcosecha/pc_ph_rango  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/postcosecha/criterios_postcosecha/pc_tina_fruta" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/postcosecha/criterios_postcosecha/pc_tina_fruta_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/postcosecha/criterios_postcosecha/pc_tina_fruta  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/postcosecha/criterios_postcosecha/pc_tina_fruta  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/postcosecha/criterios_postcosecha/pc_cambio_agua" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/postcosecha/criterios_postcosecha/pc_cambio_agua_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/postcosecha/criterios_postcosecha/pc_cambio_agua  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/postcosecha/criterios_postcosecha/pc_cambio_agua  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/postcosecha/criterios_postcosecha/pc_platos" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/postcosecha/criterios_postcosecha/pc_platos_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/postcosecha/criterios_postcosecha/pc_platos  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/postcosecha/criterios_postcosecha/pc_platos  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/postcosecha/criterios_postcosecha/pc_saneo" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/postcosecha/criterios_postcosecha/pc_saneo_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/postcosecha/criterios_postcosecha/pc_saneo  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/postcosecha/criterios_postcosecha/pc_saneo  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/postcosecha/criterios_postcosecha/pc_esquineros" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/postcosecha/criterios_postcosecha/pc_esquineros_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/postcosecha/criterios_postcosecha/pc_esquineros  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/postcosecha/criterios_postcosecha/pc_esquineros  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/postcosecha/criterios_postcosecha/pc_inmersion" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/postcosecha/criterios_postcosecha/pc_inmersion_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/postcosecha/criterios_postcosecha/pc_inmersion  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/postcosecha/criterios_postcosecha/pc_inmersion  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/postcosecha/criterios_postcosecha/pc_dosificacion" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/postcosecha/criterios_postcosecha/pc_dosificacion_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/postcosecha/criterios_postcosecha/pc_dosificacion  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/postcosecha/criterios_postcosecha/pc_dosificacion  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/postcosecha/criterios_postcosecha/pc_aspersor" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/postcosecha/criterios_postcosecha/pc_aspersor_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/postcosecha/criterios_postcosecha/pc_aspersor  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/postcosecha/criterios_postcosecha/pc_aspersor  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/postcosecha/criterios_postcosecha/pc_aspersion" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/postcosecha/criterios_postcosecha/pc_aspersion_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/postcosecha/criterios_postcosecha/pc_aspersion  = 'tiene', 2, if( /a8wgTaSFucEDpNWvaMzqdU/postcosecha/criterios_postcosecha/pc_aspersion  = 'parcial', 1, 0))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/postcosecha/puntaje_postcosecha" type="string" calculate=" /a8wgTaSFucEDpNWvaMzqdU/postcosecha/criterios_postcosecha/pc_ph_rango_pts  +  /a8wgTaSFucEDpNWvaMzqdU/postcosecha/criterios_postcosecha/pc_tina_fruta_pts  +  /a8wgTaSFucEDpNWvaMzqdU/postcosecha/criterios_postcosecha/pc_cambio_agua_pts  +  /a8wgTaSFucEDpNWvaMzqdU/postcosecha/criterios_postcosecha/pc_platos_pts  +  /a8wgTaSFucEDpNWvaMzqdU/postcosecha/criterios_postcosecha/pc_saneo_pts  +  /a8wgTaSFucEDpNWvaMzqdU/postcosecha/criterios_postcosecha/pc_esquineros_pts  +  /a8wgTaSFucEDpNWvaMzqdU/postcosecha/criterios_postcosecha/pc_inmersion_pts  +  /a8wgTaSFucEDpNWvaMzqdU/postcosecha/criterios_postcosecha/pc_dosificacion_pts  +  /a8wgTaSFucEDpNWvaMzqdU/postcosecha/criterios_postcosecha/pc_aspersor_pts  +  /a8wgTaSFucEDpNWvaMzqdU/postcosecha/criterios_postcosecha/pc_aspersion_pts "/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/postcosecha/resumen_postcosecha" readonly="true()" type="string"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/calidad_cajas/cajas_evaluadas" type="int" required="true()" constraint=". &gt;= 1" jr:constraintMsg="Debe evaluar al menos una caja."/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/calidad_cajas/cajas_dano_mecanico" type="int" required="true()" constraint=". &gt;= 0 and . &lt;=  /a8wgTaSFucEDpNWvaMzqdU/calidad_cajas/cajas_evaluadas " jr:constraintMsg="El valor debe estar entre 0 y el número de cajas evaluadas."/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/calidad_cajas/cajas_dano_insectos" type="int" required="true()" constraint=". &gt;= 0 and . &lt;=  /a8wgTaSFucEDpNWvaMzqdU/calidad_cajas/cajas_evaluadas " jr:constraintMsg="El valor debe estar entre 0 y el número de cajas evaluadas."/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/calidad_cajas/cajas_dano_hongos" type="int" required="true()" constraint=". &gt;= 0 and . &lt;=  /a8wgTaSFucEDpNWvaMzqdU/calidad_cajas/cajas_evaluadas " jr:constraintMsg="El valor debe estar entre 0 y el número de cajas evaluadas."/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/calidad_cajas/cajas_presencia_insectos" type="int" required="true()" constraint=". &gt;= 0 and . &lt;=  /a8wgTaSFucEDpNWvaMzqdU/calidad_cajas/cajas_evaluadas " jr:constraintMsg="El valor debe estar entre 0 y el número de cajas evaluadas."/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/calidad_cajas/grado_color_correcto" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/calidad_cajas/total_no_conformidades" type="string" calculate=" /a8wgTaSFucEDpNWvaMzqdU/calidad_cajas/cajas_dano_mecanico  +  /a8wgTaSFucEDpNWvaMzqdU/calidad_cajas/cajas_dano_insectos  +  /a8wgTaSFucEDpNWvaMzqdU/calidad_cajas/cajas_dano_hongos  +  /a8wgTaSFucEDpNWvaMzqdU/calidad_cajas/cajas_presencia_insectos "/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/calidad_cajas/resumen_calidad" readonly="true()" type="string"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/ayuda_agri" readonly="true()" type="string"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/monitoreo_plagas/ag_sin_thrips" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/monitoreo_plagas/ag_sin_thrips_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/control_agricola/monitoreo_plagas/ag_sin_thrips  = 'cumple', 1, 0)"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/monitoreo_plagas/ag_sin_pulgon" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/monitoreo_plagas/ag_sin_pulgon_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/control_agricola/monitoreo_plagas/ag_sin_pulgon  = 'cumple', 1, 0)"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/monitoreo_plagas/ag_sin_cochinilla" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/monitoreo_plagas/ag_sin_cochinilla_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/control_agricola/monitoreo_plagas/ag_sin_cochinilla  = 'cumple', 1, 0)"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/monitoreo_plagas/ag_sin_hormigas" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/monitoreo_plagas/ag_sin_hormigas_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/control_agricola/monitoreo_plagas/ag_sin_hormigas  = 'cumple', 1, 0)"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/monitoreo_enfermedades/ag_sin_punta_cigarro" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/monitoreo_enfermedades/ag_sin_punta_cigarro_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/control_agricola/monitoreo_enfermedades/ag_sin_punta_cigarro  = 'cumple', 1, 0)"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/monitoreo_enfermedades/ag_sin_fusarium_r4" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/monitoreo_enfermedades/ag_sin_fusarium_r4_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/control_agricola/monitoreo_enfermedades/ag_sin_fusarium_r4  = 'cumple', 1, 0)"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/monitoreo_enfermedades/ag_sin_moko" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/monitoreo_enfermedades/ag_sin_moko_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/control_agricola/monitoreo_enfermedades/ag_sin_moko  = 'cumple', 1, 0)"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/monitoreo_enfermedades/ag_sin_sigatoka" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/monitoreo_enfermedades/ag_sin_sigatoka_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/control_agricola/monitoreo_enfermedades/ag_sin_sigatoka  = 'cumple', 1, 0)"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/labores_culturales/ag_control_maleza" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/labores_culturales/ag_control_maleza_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/control_agricola/labores_culturales/ag_control_maleza  = 'cumple', 1, 0)"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/labores_culturales/ag_deshoje" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/labores_culturales/ag_deshoje_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/control_agricola/labores_culturales/ag_deshoje  = 'cumple', 1, 0)"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/labores_culturales/ag_deshije" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/labores_culturales/ag_deshije_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/control_agricola/labores_culturales/ag_deshije  = 'cumple', 1, 0)"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/labores_culturales/ag_deschante" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/labores_culturales/ag_deschante_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/control_agricola/labores_culturales/ag_deschante  = 'cumple', 1, 0)"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/labores_culturales/ag_destalle" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/labores_culturales/ag_destalle_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/control_agricola/labores_culturales/ag_destalle  = 'cumple', 1, 0)"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/labores_culturales/ag_resiembra" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/labores_culturales/ag_resiembra_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/control_agricola/labores_culturales/ag_resiembra  = 'cumple', 1, 0)"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/labores_enfunde/ag_cinta_correcta" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/labores_enfunde/ag_cinta_correcta_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/control_agricola/labores_enfunde/ag_cinta_correcta  = 'cumple', 1, 0)"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/labores_enfunde/ag_racimos_daypas" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/labores_enfunde/ag_racimos_daypas_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/control_agricola/labores_enfunde/ag_racimos_daypas  = 'cumple', 1, 0)"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/labores_enfunde/ag_deschive_desflore" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/labores_enfunde/ag_deschive_desflore_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/control_agricola/labores_enfunde/ag_deschive_desflore  = 'cumple', 1, 0)"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/labores_opcionales/ag_control_hormigas" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/labores_opcionales/ag_control_hormigas_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/control_agricola/labores_opcionales/ag_control_hormigas  = 'no_cumple', 0, 1)"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/labores_opcionales/ag_control_sigatoka" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/labores_opcionales/ag_control_sigatoka_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/control_agricola/labores_opcionales/ag_control_sigatoka  = 'no_cumple', 0, 1)"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/fertilizacion/ag_fertilizo" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/fertilizacion/ag_fertilizo_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/control_agricola/fertilizacion/ag_fertilizo  = 'cumple', 1, 0)"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/fertilizacion/ag_plan_definido" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/fertilizacion/ag_plan_definido_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/control_agricola/fertilizacion/ag_plan_definido  = 'cumple', 1, 0)"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/fertilizacion/ag_fertilizo_finca" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/fertilizacion/ag_fertilizo_finca_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/control_agricola/fertilizacion/ag_fertilizo_finca  = 'cumple', 1, 0)"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/fertilizacion/ag_enraizamiento" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/fertilizacion/ag_enraizamiento_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/control_agricola/fertilizacion/ag_enraizamiento  = 'cumple', 1, 0)"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/fertilizacion/ag_fertilizacion_edafica" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/fertilizacion/ag_fertilizacion_edafica_pts" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/control_agricola/fertilizacion/ag_fertilizacion_edafica  = 'cumple', 1, 0)"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/fertilizacion/tipo_plan_fertilizacion" type="string" relevant=" /a8wgTaSFucEDpNWvaMzqdU/control_agricola/fertilizacion/ag_plan_definido  = 'cumple'" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/fertilizacion/productos_fertilizacion" type="string" relevant=" /a8wgTaSFucEDpNWvaMzqdU/control_agricola/fertilizacion/ag_fertilizo  = 'cumple'"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/fertilizacion/numero_fases_fertilizacion" type="int" relevant=" /a8wgTaSFucEDpNWvaMzqdU/control_agricola/fertilizacion/ag_fertilizo  = 'cumple'" constraint=". &gt;= 0" jr:constraintMsg="Ingrese un número igual o mayor que cero."/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/fecha_limite_cumplimiento" type="date"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/puntaje_agricola" type="string" calculate=" /a8wgTaSFucEDpNWvaMzqdU/control_agricola/monitoreo_plagas/ag_sin_thrips_pts  +  /a8wgTaSFucEDpNWvaMzqdU/control_agricola/monitoreo_plagas/ag_sin_pulgon_pts  +  /a8wgTaSFucEDpNWvaMzqdU/control_agricola/monitoreo_plagas/ag_sin_cochinilla_pts  +  /a8wgTaSFucEDpNWvaMzqdU/control_agricola/monitoreo_plagas/ag_sin_hormigas_pts  +  /a8wgTaSFucEDpNWvaMzqdU/control_agricola/monitoreo_enfermedades/ag_sin_punta_cigarro_pts  +  /a8wgTaSFucEDpNWvaMzqdU/control_agricola/monitoreo_enfermedades/ag_sin_fusarium_r4_pts  +  /a8wgTaSFucEDpNWvaMzqdU/control_agricola/monitoreo_enfermedades/ag_sin_moko_pts  +  /a8wgTaSFucEDpNWvaMzqdU/control_agricola/monitoreo_enfermedades/ag_sin_sigatoka_pts  +  /a8wgTaSFucEDpNWvaMzqdU/control_agricola/labores_culturales/ag_control_maleza_pts  +  /a8wgTaSFucEDpNWvaMzqdU/control_agricola/labores_culturales/ag_deshoje_pts  +  /a8wgTaSFucEDpNWvaMzqdU/control_agricola/labores_culturales/ag_deshije_pts  +  /a8wgTaSFucEDpNWvaMzqdU/control_agricola/labores_culturales/ag_deschante_pts  +  /a8wgTaSFucEDpNWvaMzqdU/control_agricola/labores_culturales/ag_destalle_pts  +  /a8wgTaSFucEDpNWvaMzqdU/control_agricola/labores_culturales/ag_resiembra_pts  +  /a8wgTaSFucEDpNWvaMzqdU/control_agricola/labores_enfunde/ag_cinta_correcta_pts  +  /a8wgTaSFucEDpNWvaMzqdU/control_agricola/labores_enfunde/ag_racimos_daypas_pts  +  /a8wgTaSFucEDpNWvaMzqdU/control_agricola/labores_enfunde/ag_deschive_desflore_pts  +  /a8wgTaSFucEDpNWvaMzqdU/control_agricola/labores_opcionales/ag_control_hormigas_pts  +  /a8wgTaSFucEDpNWvaMzqdU/control_agricola/labores_opcionales/ag_control_sigatoka_pts  +  /a8wgTaSFucEDpNWvaMzqdU/control_agricola/fertilizacion/ag_fertilizo_pts  +  /a8wgTaSFucEDpNWvaMzqdU/control_agricola/fertilizacion/ag_plan_definido_pts  +  /a8wgTaSFucEDpNWvaMzqdU/control_agricola/fertilizacion/ag_fertilizo_finca_pts  +  /a8wgTaSFucEDpNWvaMzqdU/control_agricola/fertilizacion/ag_enraizamiento_pts  +  /a8wgTaSFucEDpNWvaMzqdU/control_agricola/fertilizacion/ag_fertilizacion_edafica_pts "/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/calificacion_agricola" type="string" calculate="if( /a8wgTaSFucEDpNWvaMzqdU/control_agricola/puntaje_agricola  &gt;= 21, 'Excelente', if( /a8wgTaSFucEDpNWvaMzqdU/control_agricola/puntaje_agricola  &gt;= 14, 'Muy bueno', if( /a8wgTaSFucEDpNWvaMzqdU/control_agricola/puntaje_agricola  &gt;= 7, 'Bueno', 'Malo')))"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/resumen_agricola" readonly="true()" type="string"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/puntaje_global" type="string" calculate=" /a8wgTaSFucEDpNWvaMzqdU/infraestructura/puntaje_infraestructura  +  /a8wgTaSFucEDpNWvaMzqdU/equipos/puntaje_equipos  +  /a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/puntaje_higiene  +  /a8wgTaSFucEDpNWvaMzqdU/postcosecha/puntaje_postcosecha  +  /a8wgTaSFucEDpNWvaMzqdU/control_agricola/puntaje_agricola "/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/porcentaje_global" type="string" calculate="100 *  /a8wgTaSFucEDpNWvaMzqdU/puntaje_global  div 162"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/cierre/resumen_global" readonly="true()" type="string"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/cierre/observaciones" type="string"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/cierre/recomendaciones" type="string"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/cierre/foto_evidencia" type="binary"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/cierre/productor_presente" type="string" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/cierre/nombre_firmante" type="string" relevant=" /a8wgTaSFucEDpNWvaMzqdU/cierre/productor_presente  = 'si'" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/cierre/firma_productor" type="binary" relevant=" /a8wgTaSFucEDpNWvaMzqdU/cierre/productor_presente  = 'si'" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/cierre/motivo_sin_firma" type="string" relevant=" /a8wgTaSFucEDpNWvaMzqdU/cierre/productor_presente  = 'no'" required="true()"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
+      <bind nodeset="/a8wgTaSFucEDpNWvaMzqdU/meta/instanceName" type="string" calculate="concat( /a8wgTaSFucEDpNWvaMzqdU/datos_generales/codigo_productor , ' - ',  /a8wgTaSFucEDpNWvaMzqdU/datos_generales/fecha_visita )"/>
+    </model>
+  </h:head>
+  <h:body>
+    <group appearance="field-list" ref="/a8wgTaSFucEDpNWvaMzqdU/datos_generales">
+      <label>DATOS GENERALES</label>
+      <input ref="/a8wgTaSFucEDpNWvaMzqdU/datos_generales/codigo_productor">
+        <label>Código del productor</label>
+      </input>
+      <input ref="/a8wgTaSFucEDpNWvaMzqdU/datos_generales/nombre_productor">
+        <label>Nombre del productor</label>
+      </input>
+      <input ref="/a8wgTaSFucEDpNWvaMzqdU/datos_generales/fecha_visita">
+        <label>Fecha de la visita</label>
+      </input>
+      <input ref="/a8wgTaSFucEDpNWvaMzqdU/datos_generales/semana">
+        <label>Semana del año</label>
+      </input>
+      <select1 appearance="columns-2" ref="/a8wgTaSFucEDpNWvaMzqdU/datos_generales/tipo_visita">
+        <label>Tipo de visita</label>
+        <itemset nodeset="instance('tipo_visita')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <input ref="/a8wgTaSFucEDpNWvaMzqdU/datos_generales/tecnico_responsable">
+        <label>Técnico responsable</label>
+      </input>
+      <input ref="/a8wgTaSFucEDpNWvaMzqdU/datos_generales/ubicacion_visita">
+        <label>Ubicación GPS de la visita</label>
+      </input>
+    </group>
+    <group ref="/a8wgTaSFucEDpNWvaMzqdU/infraestructura">
+      <label>INFRAESTRUCTURA</label>
+      <input ref="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/ayuda_infra">
+        <label>Califique cada criterio: Tiene = 2, Parcial = 1, No tiene = 0.</label>
+      </input>
+      <group appearance="field-list" ref="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/empacadora">
+        <label>Empacadora</label>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/empacadora/emp_piso">
+          <label>Piso de concreto y en buen estado</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/empacadora/emp_malla_saran">
+          <label>Dispone de malla sarán</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/empacadora/emp_facil_limpieza">
+          <label>Superficies de fácil limpieza</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/empacadora/emp_perimetro">
+          <label>Perímetro sin malezas</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/empacadora/emp_estructura_metalica">
+          <label>Estructura metálica en buen estado</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+      </group>
+      <group appearance="field-list" ref="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/bodega_quimicos">
+        <label>Bodega de químicos</label>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/bodega_quimicos/bq_repisas">
+          <label>Dispone de 3 repisas de metal o cemento</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/bodega_quimicos/bq_ventilada">
+          <label>Ventilada y separada de la empacadora</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/bodega_quimicos/bq_bajo_llave">
+          <label>Acceso asegurado bajo llave</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+      </group>
+      <group appearance="field-list" ref="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/bodega_carton">
+        <label>Bodega de cartón</label>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/bodega_carton/bc_puerta_orden">
+          <label>Con puerta, ordenada y limpia</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+      </group>
+      <group appearance="field-list" ref="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/zona_mezcla">
+        <label>Zona de mezcla</label>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/zona_mezcla/zm_ducha_lavaojos">
+          <label>Ducha y lavaojos de emergencia</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/zona_mezcla/zm_borde_retencion">
+          <label>Borde de retención</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/zona_mezcla/zm_fosa_descontaminacion">
+          <label>Fosa de descontaminación</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+      </group>
+      <group appearance="field-list" ref="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/patio_racimos">
+        <label>Patio de racimos</label>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/patio_racimos/pr_piso">
+          <label>Piso de ripio o concreto</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/patio_racimos/pr_limpio">
+          <label>Limpio y sin basura</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/patio_racimos/pr_techo">
+          <label>Techo con estructura metálica</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+      </group>
+      <group appearance="field-list" ref="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/pediluvio">
+        <label>Pediluvio</label>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/pediluvio/ped_agua_clorada">
+          <label>Con agua clorada</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/pediluvio/ped_desague">
+          <label>Desagüe a pozo</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/pediluvio/ped_ingreso">
+          <label>Ubicado en el ingreso de la empacadora</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+      </group>
+      <group appearance="field-list" ref="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/fosa_descontaminacion">
+        <label>Fosa de descontaminación</label>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/fosa_descontaminacion/fd_tapa">
+          <label>Con tapa protectora</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/fosa_descontaminacion/fd_limpia">
+          <label>Libre de maleza y basura</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+      </group>
+      <group appearance="field-list" ref="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/bano">
+        <label>Baño</label>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/bano/bano_agua">
+          <label>Dispone de agua</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/bano/bano_basurero">
+          <label>Dispone de basurero</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/bano/bano_papel">
+          <label>Dispone de papel higiénico</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+      </group>
+      <group appearance="field-list" ref="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/lavamanos">
+        <label>Lavamanos</label>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/lavamanos/lav_agua">
+          <label>Con agua limpia</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/lavamanos/lav_desague">
+          <label>Desagüe a pozo</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/lavamanos/lav_jabon">
+          <label>Con jabón sin olor</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/lavamanos/lav_toalla">
+          <label>Con toalla de papel</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+      </group>
+      <input ref="/a8wgTaSFucEDpNWvaMzqdU/infraestructura/resumen_infra">
+        <label> Puntaje de infraestructura: <output value=" /a8wgTaSFucEDpNWvaMzqdU/infraestructura/puntaje_infraestructura "/> de 54. </label>
+      </input>
+    </group>
+    <group ref="/a8wgTaSFucEDpNWvaMzqdU/equipos">
+      <label>EQUIPOS</label>
+      <input ref="/a8wgTaSFucEDpNWvaMzqdU/equipos/ayuda_equipos">
+        <label>Califique cada criterio: Tiene = 2, Parcial = 1, No tiene = 0.</label>
+      </input>
+      <group appearance="field-list" ref="/a8wgTaSFucEDpNWvaMzqdU/equipos/lavado_protectores">
+        <label>Lavado de protectores de racimo</label>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/equipos/lavado_protectores/e_lpr_tanque">
+          <label>Tanque limpio y de uso exclusivo</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/equipos/lavado_protectores/e_lpr_tendedero">
+          <label>Dispone de tendedero</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+      </group>
+      <group appearance="field-list" ref="/a8wgTaSFucEDpNWvaMzqdU/equipos/tinas">
+        <label>Tinas</label>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/equipos/tinas/e_tinas_estado">
+          <label>Limpias y en buen estado</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/equipos/tinas/e_tinas_numero">
+          <label>Número acorde al proceso</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+      </group>
+      <group appearance="field-list" ref="/a8wgTaSFucEDpNWvaMzqdU/equipos/balanza">
+        <label>Balanza</label>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/equipos/balanza/e_balanza_estado">
+          <label>Limpia y en buen estado</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/equipos/balanza/e_balanza_calibrada">
+          <label>Calibrada</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+      </group>
+      <group appearance="field-list" ref="/a8wgTaSFucEDpNWvaMzqdU/equipos/platos">
+        <label>Platos</label>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/equipos/platos/e_platos_estado">
+          <label>Limpios y en buen estado; mínimo 10</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/equipos/platos/e_platos_protectores">
+          <label>Con protectores de platos</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+      </group>
+      <group appearance="field-list" ref="/a8wgTaSFucEDpNWvaMzqdU/equipos/otros_equipos">
+        <label>Otros equipos</label>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/equipos/otros_equipos/e_calibrador">
+          <label>Calibrador limpio y funcional</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/equipos/otros_equipos/e_mesa_acolchada">
+          <label>Mesa de empaque acolchada, limpia y en buen estado</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/equipos/otros_equipos/e_mesa_facil_limpieza">
+          <label>Mesa de material de fácil limpieza</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/equipos/otros_equipos/e_dosificadores">
+          <label>Dosificadores limpios y en buen estado</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+      </group>
+      <input ref="/a8wgTaSFucEDpNWvaMzqdU/equipos/resumen_equipos">
+        <label> Puntaje de equipos: <output value=" /a8wgTaSFucEDpNWvaMzqdU/equipos/puntaje_equipos "/> de 24. </label>
+      </input>
+    </group>
+    <group ref="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso">
+      <label>HIGIENE, INOCUIDAD Y SEGURIDAD</label>
+      <input ref="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/ayuda_higiene">
+        <label>Califique cada criterio: Tiene = 2, Parcial = 1, No tiene = 0.</label>
+      </input>
+      <group appearance="field-list" ref="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_racimos">
+        <label>Racimos</label>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_racimos/h_racimos_colgadero">
+          <label>Colocados en colgadero</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+      </group>
+      <group appearance="field-list" ref="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_cultivo">
+        <label>Cultivo</label>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_cultivo/h_cultivo_sin_basura">
+          <label>Libre de basura común</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_cultivo/h_cultivo_sin_animales">
+          <label>Sin presencia significativa de animales</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_cultivo/h_cultivo_sin_vertidos">
+          <label>Libre de vertidos de aguas grises o negras</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+      </group>
+      <group appearance="field-list" ref="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_residuos">
+        <label>Residuos de cosecha</label>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_residuos/h_sin_raquis">
+          <label>Sin raquis dispersos en el cultivo</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_residuos/h_retiro_restos">
+          <label>Retiro de restos de cosecha anterior</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+      </group>
+      <group appearance="field-list" ref="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_envases">
+        <label>Envases vacíos</label>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_envases/h_envases_triple_lavado">
+          <label>Triple lavado y almacenamiento bajo llave hasta la gestión final</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+      </group>
+      <group appearance="field-list" ref="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_empacadora">
+        <label>Empacadora</label>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_empacadora/h_empacadora_limpia">
+          <label>Limpia y ordenada</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_empacadora/h_empacadora_sin_animales">
+          <label>Sin presencia de animales</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+      </group>
+      <group appearance="field-list" ref="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_inmediaciones">
+        <label>Inmediaciones</label>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_inmediaciones/h_inmediaciones_limpias">
+          <label>Libres de basura</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+      </group>
+      <group appearance="field-list" ref="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_cloracion">
+        <label>Cloración de agua</label>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_cloracion/h_cloracion_correcta">
+          <label>Dosificación correcta</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+      </group>
+      <group appearance="field-list" ref="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_almacenamiento">
+        <label>Almacenamiento</label>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_almacenamiento/h_materiales_palets">
+          <label>Materiales sobre pallets</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_almacenamiento/h_fruta_palets">
+          <label>Fruta empacada sobre pallets</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+      </group>
+      <group appearance="field-list" ref="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_registros">
+        <label>Registros</label>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_registros/h_carpeta_actualizada">
+          <label>Carpeta de registros actualizada al menos hasta la semana anterior</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+      </group>
+      <group appearance="field-list" ref="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_epp">
+        <label>Equipo de protección</label>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_epp/h_epp_general">
+          <label>Uso de guantes, cofia, mandil y zapatos cerrados</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_epp/h_epp_tinas">
+          <label>Uso de mascarilla y visor en tinas</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_epp/h_epp_enfunde">
+          <label>Uso de mascarilla con filtro durante el enfunde</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+      </group>
+      <group appearance="field-list" ref="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_trabajadores">
+        <label>Higiene de trabajadores</label>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_trabajadores/h_usan_lavamanos">
+          <label>Usan lavamanos y pediluvio</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_trabajadores/h_area_alimentos">
+          <label>Usan áreas exclusivas para consumir alimentos</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_trabajadores/h_sin_accesorios">
+          <label>Sin pulseras, collares ni anillos durante el proceso</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+      </group>
+      <group appearance="field-list" ref="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_emergencia">
+        <label>Emergencia</label>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/h_emergencia/h_botiquin_extintor">
+          <label>Botiquín abastecido y extintor vigente</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+      </group>
+      <input ref="/a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/resumen_higiene">
+        <label> Puntaje de higiene, inocuidad y seguridad: <output value=" /a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/puntaje_higiene "/> de 40. </label>
+      </input>
+    </group>
+    <group ref="/a8wgTaSFucEDpNWvaMzqdU/postcosecha">
+      <label>CONTROL DE LABORES POSTCOSECHA</label>
+      <input ref="/a8wgTaSFucEDpNWvaMzqdU/postcosecha/ayuda_post">
+        <label>Califique cada criterio: Tiene = 2, Parcial = 1, No tiene = 0.</label>
+      </input>
+      <group appearance="field-list" ref="/a8wgTaSFucEDpNWvaMzqdU/postcosecha/criterios_postcosecha">
+        <label>Criterios de postcosecha</label>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/postcosecha/criterios_postcosecha/pc_ph_rango">
+          <label>pH del tratamiento dentro del rango</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/postcosecha/criterios_postcosecha/pc_tina_fruta">
+          <label>Fruta no amontonada en la tina</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/postcosecha/criterios_postcosecha/pc_cambio_agua">
+          <label>Cambio de agua cada 100 racimos</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/postcosecha/criterios_postcosecha/pc_platos">
+          <label>Mínimo 10 platos escurriendo y fruta no amontonada</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/postcosecha/criterios_postcosecha/pc_saneo">
+          <label>Saneo correcto en caja de 7 kg</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/postcosecha/criterios_postcosecha/pc_esquineros">
+          <label>Elimina esquineros en caja de 7 kg</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/postcosecha/criterios_postcosecha/pc_inmersion">
+          <label>Inmersión correcta de toda la mano o clúster</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/postcosecha/criterios_postcosecha/pc_dosificacion">
+          <label>Dosificación correcta del tratamiento</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/postcosecha/criterios_postcosecha/pc_aspersor">
+          <label>Aspersor limpio</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/postcosecha/criterios_postcosecha/pc_aspersion">
+          <label>Aspersión realizada correctamente</label>
+          <itemset nodeset="instance('escala_210')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+      </group>
+      <input ref="/a8wgTaSFucEDpNWvaMzqdU/postcosecha/resumen_postcosecha">
+        <label> Puntaje de postcosecha: <output value=" /a8wgTaSFucEDpNWvaMzqdU/postcosecha/puntaje_postcosecha "/> de 20. </label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/a8wgTaSFucEDpNWvaMzqdU/calidad_cajas">
+      <label>CONTROL DE CALIDAD DE CAJAS</label>
+      <input ref="/a8wgTaSFucEDpNWvaMzqdU/calidad_cajas/cajas_evaluadas">
+        <label>Número de cajas evaluadas</label>
+      </input>
+      <input ref="/a8wgTaSFucEDpNWvaMzqdU/calidad_cajas/cajas_dano_mecanico">
+        <label>Cajas con daños mecánicos (golpes, curvo o raspones)</label>
+      </input>
+      <input ref="/a8wgTaSFucEDpNWvaMzqdU/calidad_cajas/cajas_dano_insectos">
+        <label>Cajas con daño por insectos</label>
+      </input>
+      <input ref="/a8wgTaSFucEDpNWvaMzqdU/calidad_cajas/cajas_dano_hongos">
+        <label>Cajas con daño por hongos</label>
+      </input>
+      <input ref="/a8wgTaSFucEDpNWvaMzqdU/calidad_cajas/cajas_presencia_insectos">
+        <label>Cajas con presencia de insectos</label>
+      </input>
+      <select1 appearance="columns-2" ref="/a8wgTaSFucEDpNWvaMzqdU/calidad_cajas/grado_color_correcto">
+        <label>Grado correcto y color de almendra</label>
+        <itemset nodeset="instance('cumple_no')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <input ref="/a8wgTaSFucEDpNWvaMzqdU/calidad_cajas/resumen_calidad">
+        <label> Total de observaciones de no conformidad: <output value=" /a8wgTaSFucEDpNWvaMzqdU/calidad_cajas/total_no_conformidades "/>. </label>
+      </input>
+    </group>
+    <group ref="/a8wgTaSFucEDpNWvaMzqdU/control_agricola">
+      <label>CONTROL AGRÍCOLA</label>
+      <input ref="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/ayuda_agri">
+        <label>Cada criterio cumplido suma 1 punto. Puntaje máximo: 24.</label>
+      </input>
+      <group appearance="field-list" ref="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/monitoreo_plagas">
+        <label>1.1 Monitoreo de plagas</label>
+        <select1 appearance="columns-2" ref="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/monitoreo_plagas/ag_sin_thrips">
+          <label>Sin presencia de thrips</label>
+          <itemset nodeset="instance('cumple_no')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 appearance="columns-2" ref="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/monitoreo_plagas/ag_sin_pulgon">
+          <label>Sin presencia de pulgón</label>
+          <itemset nodeset="instance('cumple_no')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 appearance="columns-2" ref="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/monitoreo_plagas/ag_sin_cochinilla">
+          <label>Sin presencia de cochinilla</label>
+          <itemset nodeset="instance('cumple_no')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 appearance="columns-2" ref="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/monitoreo_plagas/ag_sin_hormigas">
+          <label>Sin presencia de hormigas que afecten el cultivo</label>
+          <itemset nodeset="instance('cumple_no')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+      </group>
+      <group appearance="field-list" ref="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/monitoreo_enfermedades">
+        <label>1.2 Monitoreo de enfermedades</label>
+        <select1 appearance="columns-2" ref="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/monitoreo_enfermedades/ag_sin_punta_cigarro">
+          <label>Sin punta de cigarro</label>
+          <itemset nodeset="instance('cumple_no')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 appearance="columns-2" ref="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/monitoreo_enfermedades/ag_sin_fusarium_r4">
+          <label>Sin síntomas de Fusarium raza 4</label>
+          <itemset nodeset="instance('cumple_no')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 appearance="columns-2" ref="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/monitoreo_enfermedades/ag_sin_moko">
+          <label>Sin síntomas de moko</label>
+          <itemset nodeset="instance('cumple_no')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 appearance="columns-2" ref="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/monitoreo_enfermedades/ag_sin_sigatoka">
+          <label>Sin afectación de sigatoka</label>
+          <itemset nodeset="instance('cumple_no')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+      </group>
+      <group appearance="field-list" ref="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/labores_culturales">
+        <label>2.1 Labores culturales básicas</label>
+        <select1 appearance="columns-2" ref="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/labores_culturales/ag_control_maleza">
+          <label>Control de maleza realizado</label>
+          <itemset nodeset="instance('cumple_no')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 appearance="columns-2" ref="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/labores_culturales/ag_deshoje">
+          <label>Deshoje realizado correctamente</label>
+          <itemset nodeset="instance('cumple_no')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 appearance="columns-2" ref="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/labores_culturales/ag_deshije">
+          <label>Deshije realizado correctamente</label>
+          <itemset nodeset="instance('cumple_no')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 appearance="columns-2" ref="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/labores_culturales/ag_deschante">
+          <label>Deschante realizado correctamente</label>
+          <itemset nodeset="instance('cumple_no')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 appearance="columns-2" ref="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/labores_culturales/ag_destalle">
+          <label>Destalle realizado correctamente</label>
+          <itemset nodeset="instance('cumple_no')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 appearance="columns-2" ref="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/labores_culturales/ag_resiembra">
+          <label>Resiembra realizada cuando corresponde</label>
+          <itemset nodeset="instance('cumple_no')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+      </group>
+      <group appearance="field-list" ref="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/labores_enfunde">
+        <label>2.2 Labores de enfunde</label>
+        <select1 appearance="columns-2" ref="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/labores_enfunde/ag_cinta_correcta">
+          <label>Cinta correcta</label>
+          <itemset nodeset="instance('cumple_no')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 appearance="columns-2" ref="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/labores_enfunde/ag_racimos_daypas">
+          <label>Racimos con daypas</label>
+          <itemset nodeset="instance('cumple_no')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 appearance="columns-2" ref="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/labores_enfunde/ag_deschive_desflore">
+          <label>Deschive y desflore correctos</label>
+          <itemset nodeset="instance('cumple_no')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+      </group>
+      <group appearance="field-list" ref="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/labores_opcionales">
+        <label>3.1 Actividad fitosanitaria</label>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/labores_opcionales/ag_control_hormigas">
+          <label>Control de hormigas realizado cuando corresponde</label>
+          <itemset nodeset="instance('cumple_na')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 appearance="columns-3" ref="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/labores_opcionales/ag_control_sigatoka">
+          <label>Control de sigatoka realizado cuando corresponde</label>
+          <itemset nodeset="instance('cumple_na')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+      </group>
+      <group appearance="field-list" ref="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/fertilizacion">
+        <label>4. Fertilización</label>
+        <select1 appearance="columns-2" ref="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/fertilizacion/ag_fertilizo">
+          <label>Realizó fertilización</label>
+          <itemset nodeset="instance('cumple_no')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 appearance="columns-2" ref="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/fertilizacion/ag_plan_definido">
+          <label>Dispone de un plan de fertilización definido</label>
+          <itemset nodeset="instance('cumple_no')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 appearance="columns-2" ref="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/fertilizacion/ag_fertilizo_finca">
+          <label>Fertilizó toda el área planificada</label>
+          <itemset nodeset="instance('cumple_no')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 appearance="columns-2" ref="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/fertilizacion/ag_enraizamiento">
+          <label>Realizó enraizamiento vía drench cuando correspondía</label>
+          <itemset nodeset="instance('cumple_no')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 appearance="columns-2" ref="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/fertilizacion/ag_fertilizacion_edafica">
+          <label>Realizó fertilización edáfica con granulados cuando correspondía</label>
+          <itemset nodeset="instance('cumple_no')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 appearance="columns-2" ref="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/fertilizacion/tipo_plan_fertilizacion">
+          <label>Tipo de plan de fertilización</label>
+          <itemset nodeset="instance('tipo_plan')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <input appearance="multiline" ref="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/fertilizacion/productos_fertilizacion">
+          <label>Productos utilizados</label>
+        </input>
+        <input ref="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/fertilizacion/numero_fases_fertilizacion">
+          <label>Número de fases de fertilización</label>
+        </input>
+      </group>
+      <input ref="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/fecha_limite_cumplimiento">
+        <label>Fecha límite para cumplir las acciones pendientes</label>
+        <hint>Para una primera visita, el plazo sugerido en la ficha original es de máximo 15 días.</hint>
+      </input>
+      <input ref="/a8wgTaSFucEDpNWvaMzqdU/control_agricola/resumen_agricola">
+        <label> Puntaje agrícola: <output value=" /a8wgTaSFucEDpNWvaMzqdU/control_agricola/puntaje_agricola "/> de 24. Calificación: <output value=" /a8wgTaSFucEDpNWvaMzqdU/control_agricola/calificacion_agricola "/>. </label>
+      </input>
+    </group>
+    <group ref="/a8wgTaSFucEDpNWvaMzqdU/cierre">
+      <label>OBSERVACIONES, EVIDENCIA Y FIRMA</label>
+      <input ref="/a8wgTaSFucEDpNWvaMzqdU/cierre/resumen_global">
+        <label> Resumen: infraestructura <output value=" /a8wgTaSFucEDpNWvaMzqdU/infraestructura/puntaje_infraestructura "/>/54; equipos <output value=" /a8wgTaSFucEDpNWvaMzqdU/equipos/puntaje_equipos "/>/24; higiene <output value=" /a8wgTaSFucEDpNWvaMzqdU/higiene_inocuidad_sso/puntaje_higiene "/>/40; postcosecha <output value=" /a8wgTaSFucEDpNWvaMzqdU/postcosecha/puntaje_postcosecha "/>/20; agrícola <output value=" /a8wgTaSFucEDpNWvaMzqdU/control_agricola/puntaje_agricola "/>/24. Total: <output value=" /a8wgTaSFucEDpNWvaMzqdU/puntaje_global "/>/162 (<output value=" /a8wgTaSFucEDpNWvaMzqdU/porcentaje_global "/>%). </label>
+      </input>
+      <input appearance="multiline" ref="/a8wgTaSFucEDpNWvaMzqdU/cierre/observaciones">
+        <label>Observaciones</label>
+      </input>
+      <input appearance="multiline" ref="/a8wgTaSFucEDpNWvaMzqdU/cierre/recomendaciones">
+        <label>Recomendaciones y acciones correctivas</label>
+      </input>
+      <upload mediatype="image/*" ref="/a8wgTaSFucEDpNWvaMzqdU/cierre/foto_evidencia">
+        <label>Fotografía de evidencia</label>
+      </upload>
+      <select1 appearance="columns-2" ref="/a8wgTaSFucEDpNWvaMzqdU/cierre/productor_presente">
+        <label>¿El productor o su representante estuvo presente?</label>
+        <itemset nodeset="instance('si_no')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <input ref="/a8wgTaSFucEDpNWvaMzqdU/cierre/nombre_firmante">
+        <label>Nombre de quien firma</label>
+      </input>
+      <upload mediatype="image/*" appearance="signature" ref="/a8wgTaSFucEDpNWvaMzqdU/cierre/firma_productor">
+        <label>Firma del productor o representante</label>
+      </upload>
+      <input appearance="multiline" ref="/a8wgTaSFucEDpNWvaMzqdU/cierre/motivo_sin_firma">
+        <label>Motivo por el que no se obtuvo la firma</label>
+      </input>
+    </group>
+  </h:body>
+</h:html>

@@ -8,6 +8,8 @@ import org.compiere.util.Env;
 
 import com.comus.model.I_C_BPartner_Extradata;
 import com.comus.model.X_C_BPartner_Extradata;
+import com.comus.model.I_COMUS_TechnicalVisit;
+import com.comus.model.X_COMUS_TechnicalVisit;
 
 public class ModelFactory implements IModelFactory {
 
@@ -16,6 +18,8 @@ public class ModelFactory implements IModelFactory {
 
 		if (I_C_BPartner_Extradata.Table_Name.equals(tableName))
 			return X_C_BPartner_Extradata.class;
+		if (I_COMUS_TechnicalVisit.Table_Name.equals(tableName))
+			return X_COMUS_TechnicalVisit.class;
 		return null;
 	}
 
@@ -24,6 +28,8 @@ public class ModelFactory implements IModelFactory {
 
 		if (I_C_BPartner_Extradata.Table_Name.equals(tableName))
 			return new X_C_BPartner_Extradata(Env.getCtx(), Record_ID, trxName);
+		if (I_COMUS_TechnicalVisit.Table_Name.equals(tableName))
+			return new X_COMUS_TechnicalVisit(Env.getCtx(), Record_ID, trxName);
 		return null;
 	}
 
@@ -32,6 +38,8 @@ public class ModelFactory implements IModelFactory {
 
 		if (I_C_BPartner_Extradata.Table_Name.equals(tableName))
 			return new X_C_BPartner_Extradata(Env.getCtx(), rs, trxName);
+		if (I_COMUS_TechnicalVisit.Table_Name.equals(tableName))
+			return new X_COMUS_TechnicalVisit(Env.getCtx(), rs, trxName);
 		return null;
 	}
 }
